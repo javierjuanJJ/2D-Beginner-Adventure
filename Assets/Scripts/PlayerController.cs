@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public InputAction MoveAction;
+    [SerializeField] private float speed;
 
 
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 move = MoveAction.ReadValue<Vector2>();
         Debug.Log(move);
-        Vector2 position = (Vector2)transform.position + move * 0.1f;
+        Vector2 position = (Vector2)transform.position + move * (speed * Time.deltaTime);
         transform.position = position;
     }
 }
