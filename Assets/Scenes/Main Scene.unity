@@ -440,7 +440,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f3277fa92aa4642aaae5da12da1046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  MoveAction:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a83bfe59-4fa0-4286-b8a9-1f3b82dcf22c
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 7fe0d368-40f8-4460-a01a-e1e5b870fad5
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 0ec55e39-021e-49f1-bf93-497dafbbf338
+      m_Path: <Keyboard>/#(W)
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: f3ce2b48-7db6-4b71-856b-4f86a6526b00
+      m_Path: <Keyboard>/#(S)
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: bf24cdde-083d-4aae-9c40-988beab1b399
+      m_Path: <Keyboard>/#(A)
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: a8af3c59-f616-4924-9d45-29637f2f9311
+      m_Path: <Keyboard>/#(D)
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: GamePad
+      m_Id: 36f14102-853e-45dd-89da-a6cc6f3ad45a
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: d058ed0e-6869-465f-8315-91a99fcf2919
+      m_Path: <Gamepad>/dpad/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: b3d0080f-5fbc-4529-a7a4-1ed116e8aeb1
+      m_Path: <Gamepad>/dpad/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 319f46ac-863d-4a3a-acfc-f3d8ad4fcf34
+      m_Path: <Gamepad>/dpad/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 81556e1e-c512-42de-bd21-1561e876d312
+      m_Path: <Gamepad>/dpad/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Android
+      m_Id: 90e1bb6e-5b4b-4e71-83dd-d22d7d810cb7
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: a16f929f-5271-4e8f-a8a0-9bf0eacf0b0b
+      m_Path: <Touchscreen>/primaryTouch/delta/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: a1df9aee-40e8-4b70-b5cd-346bc3d2f227
+      m_Path: <Touchscreen>/primaryTouch/delta/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: ab10f94f-7033-4578-983a-e263b9528fa4
+      m_Path: <Touchscreen>/primaryTouch/delta/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 37e35625-853a-48e5-b4aa-b06bab3f3c44
+      m_Path: <Touchscreen>/primaryTouch/delta/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    m_Flags: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
