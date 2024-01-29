@@ -10,12 +10,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
 Rigidbody2D rigidbody2d;
   Vector2 move;
+  // Variables related to the health system
+  public int maxHealth = 5;
+  int currentHealth;
 
     // Start is called before the first frame update
     void Start()
     {
         MoveAction.Enable();  
         rigidbody2d = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+    }
+    void ChangeHealth (int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 
 
