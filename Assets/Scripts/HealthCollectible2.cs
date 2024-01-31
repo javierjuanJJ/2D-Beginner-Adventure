@@ -26,9 +26,14 @@ public class HealthCollectible2 : MonoBehaviour
             PlayerController controller = other.GetComponent<PlayerController>();
             if (controller != null)
             {
-                controller.ChangeHealth(healthPuntuation);
-                Debug.Log("Object that entered the trigger has got a : " + healthPuntuation);
-                Destroy(gameObject);
+
+                if (healthPuntuation != 0 && ((healthPuntuation > 0 && controller.health < controller.maxHealth) || (healthPuntuation < 0 && controller.health > 0)))
+                {
+                    controller.ChangeHealth(healthPuntuation);
+                    Debug.Log("Object that entered the trigger has got a : " + healthPuntuation);
+                    Destroy(gameObject);
+                }
+                
             }
         }
     }
